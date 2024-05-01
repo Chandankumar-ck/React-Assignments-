@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fragment & Event handle</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // Your JSX code here
+        < >
+        <p>react is a javascript libarary</p>
+        // inline style adds here
+        
+        <div style={{
+      margin: "20px",
+      padding: "20px",
+      border: "2px, solid, black",
+      backgroundColor: "green",
+    }} class="main">
+            <p>Click the below button to alert 'Hello</p>
+            <button onClick={() => alert("Hello")}>Alert Hello </button>
+        </div>
+        </>
+
+
+
+        // need how to render this on site need to explore
+        
+        const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
+      reactRoot.render();
+    
+    </script>
+  </body>
+</html>
